@@ -1,0 +1,1366 @@
+{
+  "info": {
+    "_postman_id": "b8be5d34-f628-46fd-8a26-be0a63923e63",
+    "name": "neonatal",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "20783377"
+  },
+  "item": [
+    {
+      "name": "user auth Copy",
+      "item": [
+        {
+          "name": "signup",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "email",
+                  "value": "user4@pk.in",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "123456",
+                  "type": "text"
+                },
+                {
+                  "key": "phone",
+                  "value": "8989898989",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "name",
+                  "value": "pk",
+                  "type": "text"
+                },
+                {
+                  "key": "avatarUrl",
+                  "type": "file",
+                  "src": "/C:/Users/sanja/Downloads/avtar.png"
+                }
+              ]
+            },
+            "url": {
+              "raw": "https://tan-tender-clownfish.cyclic.app/api/user/signup",
+              "protocol": "https",
+              "host": ["tan-tender-clownfish", "cyclic", "app"],
+              "path": ["api", "user", "signup"]
+            }
+          },
+          "response": [
+            {
+              "name": "signup",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "user4@pk.in",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "123456",
+                      "type": "text"
+                    },
+                    {
+                      "key": "phone",
+                      "value": "8989898989",
+                      "type": "text",
+                      "disabled": true
+                    },
+                    {
+                      "key": "name",
+                      "value": "pk",
+                      "type": "text"
+                    },
+                    {
+                      "key": "avatarUrl",
+                      "type": "file",
+                      "src": "/home/prabhakar/Pictures/Wallpapers/486xm1.jpg",
+                      "disabled": true
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "localhost:4000/api/user/signup",
+                  "host": ["localhost"],
+                  "port": "4000",
+                  "path": ["api", "user", "signup"]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": ""
+            }
+          ]
+        },
+        {
+          "name": "login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\": \"user4@pk.in\",\n    \"password\": \"123456\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://tan-tender-clownfish.cyclic.app/api/user/login",
+              "protocol": "https",
+              "host": ["tan-tender-clownfish", "cyclic", "app"],
+              "path": ["api", "user", "login"]
+            }
+          },
+          "response": [
+            {
+              "name": "login",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"email\": \"doctor9@pk.in\",\n    \"password\": \"123456\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "localhost:3000/api/users/login",
+                  "host": ["localhost"],
+                  "port": "3000",
+                  "path": ["api", "users", "login"]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": ""
+            }
+          ]
+        },
+        {
+          "name": "get a user by id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://tan-tender-clownfish.cyclic.app/api/user/id/63a9a4fb112fad32f9ad62c7",
+              "protocol": "https",
+              "host": ["tan-tender-clownfish", "cyclic", "app"],
+              "path": ["api", "user", "id", "63a9a4fb112fad32f9ad62c7"]
+            }
+          },
+          "response": [
+            {
+              "name": "get a user by id",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "localhost:4000/api/user/id/639b009dd53889259436d976",
+                  "host": ["localhost"],
+                  "port": "4000",
+                  "path": ["api", "user", "id", "639b009dd53889259436d976"]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": ""
+            }
+          ]
+        },
+        {
+          "name": "delete a user",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://tan-tender-clownfish.cyclic.app/api/user/id/63a9a4fb112fad32f9ad62c7",
+              "protocol": "https",
+              "host": ["tan-tender-clownfish", "cyclic", "app"],
+              "path": ["api", "user", "id", "63a9a4fb112fad32f9ad62c7"]
+            }
+          },
+          "response": [
+            {
+              "name": "delete a user",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "localhost:3000/api/users/id/6386fa34cec292814a0e66de",
+                  "host": ["localhost"],
+                  "port": "3000",
+                  "path": ["api", "users", "id", "6386fa34cec292814a0e66de"]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": ""
+            }
+          ]
+        },
+        {
+          "name": "update user",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\": \"pk13@pk.in\",\n    \"password\": \"123456\",\n    \"name\": \"pk\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:3000/api/users/id/638076745119ee9bfc5fc922",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "users", "id", "638076745119ee9bfc5fc922"]
+            }
+          },
+          "response": [
+            {
+              "name": "update user",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"email\": \"pk13@pk.in\",\n    \"password\": \"123456\",\n    \"name\": \"pk\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "localhost:3000/api/users/id/638076745119ee9bfc5fc922",
+                  "host": ["localhost"],
+                  "port": "3000",
+                  "path": ["api", "users", "id", "638076745119ee9bfc5fc922"]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": ""
+            }
+          ]
+        },
+        {
+          "name": "users",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "https://tan-tender-clownfish.cyclic.app/api/user/list",
+              "protocol": "https",
+              "host": ["tan-tender-clownfish", "cyclic", "app"],
+              "path": ["api", "user", "list"],
+              "query": [
+                {
+                  "key": "limit",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "page",
+                  "value": "2",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "users",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "localhost:4000/api/user/list",
+                  "host": ["localhost"],
+                  "port": "4000",
+                  "path": ["api", "user", "list"],
+                  "query": [
+                    {
+                      "key": "limit",
+                      "value": "2",
+                      "disabled": true
+                    },
+                    {
+                      "key": "page",
+                      "value": "2",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": ""
+            }
+          ]
+        },
+        {
+          "name": "get my account",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "localhost:4000/api/user/my-account",
+              "host": ["localhost"],
+              "port": "4000",
+              "path": ["api", "user", "my-account"],
+              "query": [
+                {
+                  "key": "limit",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "page",
+                  "value": "2",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "get my account",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "localhost:4000/api/user/my-account",
+                  "host": ["localhost"],
+                  "port": "4000",
+                  "path": ["api", "user", "my-account"],
+                  "query": [
+                    {
+                      "key": "limit",
+                      "value": "2",
+                      "disabled": true
+                    },
+                    {
+                      "key": "page",
+                      "value": "2",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "patient",
+      "item": [
+        {
+          "name": "list",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://tan-tender-clownfish.cyclic.app/api/patient/",
+              "protocol": "https",
+              "host": ["tan-tender-clownfish", "cyclic", "app"],
+              "path": ["api", "patient", ""]
+            }
+          },
+          "response": [
+            {
+              "name": "list",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "localhost:3000/api/patient/",
+                  "host": ["localhost"],
+                  "port": "3000",
+                  "path": ["api", "patient", ""]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": ""
+            }
+          ]
+        },
+        {
+          "name": "save",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "name",
+                  "value": "Pok",
+                  "type": "text"
+                },
+                {
+                  "key": "age",
+                  "value": "12",
+                  "type": "text"
+                },
+                {
+                  "key": "weight",
+                  "value": "43",
+                  "type": "text"
+                },
+                {
+                  "key": "bloodGas.pH",
+                  "value": "15",
+                  "type": "text"
+                },
+                {
+                  "key": "bloodGas.K",
+                  "value": "12",
+                  "type": "text"
+                },
+                {
+                  "key": "xRayImages",
+                  "type": "file",
+                  "src": "/C:/Users/sanja/Downloads/PhotoFolio/assets/img/testimonials/testimonials-5.jpg"
+                },
+                {
+                  "key": "vitals.HR",
+                  "value": "demo",
+                  "type": "text"
+                },
+                {
+                  "key": "vitals.RR",
+                  "value": "demo",
+                  "type": "text"
+                },
+                {
+                  "key": "vitalsImages",
+                  "type": "file",
+                  "src": [
+                    "/C:/Users/sanja/Downloads/PhotoFolio/assets/img/testimonials/testimonials-1.jpg",
+                    "/C:/Users/sanja/Downloads/PhotoFolio/assets/img/testimonials/testimonials-2.jpg",
+                    "/C:/Users/sanja/Downloads/PhotoFolio/assets/img/testimonials/testimonials-3.jpg",
+                    "/C:/Users/sanja/Downloads/PhotoFolio/assets/img/testimonials/testimonials-4.jpg"
+                  ]
+                }
+              ]
+            },
+            "url": {
+              "raw": "https://tan-tender-clownfish.cyclic.app/api/patient",
+              "protocol": "https",
+              "host": ["tan-tender-clownfish", "cyclic", "app"],
+              "path": ["api", "patient"]
+            }
+          },
+          "response": [
+            {
+              "name": "save",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "name",
+                      "value": "Pok",
+                      "type": "text"
+                    },
+                    {
+                      "key": "age",
+                      "value": "12",
+                      "type": "text"
+                    },
+                    {
+                      "key": "weight",
+                      "value": "43",
+                      "type": "text"
+                    },
+                    {
+                      "key": "bloodGas.pH",
+                      "value": "15",
+                      "type": "text"
+                    },
+                    {
+                      "key": "bloodGas.K",
+                      "value": "12",
+                      "type": "text"
+                    },
+                    {
+                      "key": "xRayImages",
+                      "type": "file",
+                      "src": [
+                        "/home/prabhakar/Pictures/small size images/keila-hotzel-lFmuWU0tv4M-unsplash.jpg",
+                        "/home/prabhakar/Pictures/small size images/mike-meyers--haAxbjiHds-unsplash.jpg"
+                      ],
+                      "disabled": true
+                    },
+                    {
+                      "key": "vitals.HR",
+                      "value": "demo",
+                      "type": "text"
+                    },
+                    {
+                      "key": "vitals.RR",
+                      "value": "demo",
+                      "type": "text"
+                    },
+                    {
+                      "key": "vitalsImages",
+                      "type": "file",
+                      "src": "/home/prabhakar/Desktop/challenjingPRoject.txt"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "localhost:4000/api/patient",
+                  "host": ["localhost"],
+                  "port": "4000",
+                  "path": ["api", "patient"]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": ""
+            }
+          ]
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "name",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "age",
+                  "value": "12",
+                  "type": "text"
+                },
+                {
+                  "key": "weight",
+                  "value": "43",
+                  "type": "text"
+                },
+                {
+                  "key": "bloodGas.pH",
+                  "value": "15",
+                  "type": "text"
+                },
+                {
+                  "key": "bloodGas.K",
+                  "value": "12",
+                  "type": "text"
+                },
+                {
+                  "key": "xRayImages",
+                  "type": "file",
+                  "src": [
+                    "/home/prabhakar/Pictures/small size images/aria@2x.png",
+                    "/home/prabhakar/Pictures/small size images/keila-hotzel-lFmuWU0tv4M-unsplash.jpg",
+                    "/home/prabhakar/Pictures/small size images/mike-meyers--haAxbjiHds-unsplash.jpg"
+                  ]
+                },
+                {
+                  "key": "vitals.HR",
+                  "value": "demo",
+                  "type": "text"
+                },
+                {
+                  "key": "vitals.RR",
+                  "value": "demo",
+                  "type": "text"
+                },
+                {
+                  "key": "vitalsImages",
+                  "type": "file",
+                  "src": [
+                    "/home/prabhakar/Pictures/small size images/aria@2x.png",
+                    "/home/prabhakar/Pictures/small size images/keila-hotzel-lFmuWU0tv4M-unsplash.jpg",
+                    "/home/prabhakar/Pictures/small size images/mike-meyers--haAxbjiHds-unsplash.jpg"
+                  ]
+                },
+                {
+                  "key": "name",
+                  "value": "Peter Parker",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "https://tan-tender-clownfish.cyclic.app/api/patient",
+              "protocol": "https",
+              "host": ["tan-tender-clownfish", "cyclic", "app"],
+              "path": ["api", "patient"]
+            }
+          },
+          "response": [
+            {
+              "name": "update",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "name",
+                      "value": "",
+                      "type": "text"
+                    },
+                    {
+                      "key": "age",
+                      "value": "12",
+                      "type": "text"
+                    },
+                    {
+                      "key": "weight",
+                      "value": "43",
+                      "type": "text"
+                    },
+                    {
+                      "key": "bloodGas.pH",
+                      "value": "15",
+                      "type": "text"
+                    },
+                    {
+                      "key": "bloodGas.K",
+                      "value": "12",
+                      "type": "text"
+                    },
+                    {
+                      "key": "xRayImages",
+                      "type": "file",
+                      "src": [
+                        "/home/prabhakar/Pictures/small size images/aria@2x.png",
+                        "/home/prabhakar/Pictures/small size images/keila-hotzel-lFmuWU0tv4M-unsplash.jpg",
+                        "/home/prabhakar/Pictures/small size images/mike-meyers--haAxbjiHds-unsplash.jpg"
+                      ]
+                    },
+                    {
+                      "key": "vitals.HR",
+                      "value": "demo",
+                      "type": "text"
+                    },
+                    {
+                      "key": "vitals.RR",
+                      "value": "demo",
+                      "type": "text"
+                    },
+                    {
+                      "key": "vitalsImages",
+                      "type": "file",
+                      "src": [
+                        "/home/prabhakar/Pictures/small size images/aria@2x.png",
+                        "/home/prabhakar/Pictures/small size images/keila-hotzel-lFmuWU0tv4M-unsplash.jpg",
+                        "/home/prabhakar/Pictures/small size images/mike-meyers--haAxbjiHds-unsplash.jpg"
+                      ]
+                    },
+                    {
+                      "key": "name",
+                      "value": "Peter Parker",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "localhost:4000/api/patient",
+                  "host": ["localhost"],
+                  "port": "4000",
+                  "path": ["api", "patient"]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": ""
+            }
+          ]
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://tan-tender-clownfish.cyclic.app/api/patient/id/63abbf07c1cc4681e85cfd27",
+              "protocol": "https",
+              "host": ["tan-tender-clownfish", "cyclic", "app"],
+              "path": ["api", "patient", "id", "63abbf07c1cc4681e85cfd27"]
+            }
+          },
+          "response": [
+            {
+              "name": "delete",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "localhost:4000/api/patient/id/63a9352306c15bf3957e9c8b",
+                  "host": ["localhost"],
+                  "port": "4000",
+                  "path": ["api", "patient", "id", "63a9352306c15bf3957e9c8b"]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": ""
+            }
+          ]
+        },
+        {
+          "name": "find One",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://tan-tender-clownfish.cyclic.app/api/patient/id/63abbef5c1cc4681e85cfd25",
+              "protocol": "https",
+              "host": ["tan-tender-clownfish", "cyclic", "app"],
+              "path": ["api", "patient", "id", "63abbef5c1cc4681e85cfd25"]
+            }
+          },
+          "response": [
+            {
+              "name": "find One",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "localhost:4000/api/patient/id/63a406219c1bea62c0d48131",
+                  "host": ["localhost"],
+                  "port": "4000",
+                  "path": ["api", "patient", "id", "63a406219c1bea62c0d48131"]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": ""
+            }
+          ]
+        },
+        {
+          "name": "delete images",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "https://tan-tender-clownfish.cyclic.app/api/patient/id/63aaad6fc2475910cc259a16",
+              "protocol": "https",
+              "host": ["tan-tender-clownfish", "cyclic", "app"],
+              "path": ["api", "patient", "id", "63aaad6fc2475910cc259a16"],
+              "query": [
+                {
+                  "key": "vitalsImageUrl",
+                  "value": "https://res.cloudinary.com/dkpaivmth/image/upload/v1672129894/neonatal/ksesywljketoj539umni.jpg",
+                  "disabled": true
+                },
+                {
+                  "key": "xRayImageUrl",
+                  "value": "https://res.cloudinary.com/dkpaivmth/image/upload/v1672129882/neonatal/nlwhag0sxm74zklmqlht.jpg",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "delete images",
+              "originalRequest": {
+                "method": "PATCH",
+                "header": [],
+                "url": {
+                  "raw": "localhost:4000/api/patient/id/63a935c73711e59f33dd99ca?vitalsImageUrl=https://res.cloudinary.com/prabhupk/image/upload/v1672033735/neonatal/ftegktpokpd7fbrnarmz.jpg&xRayImageUrl=https://res.cloudinary.com/prabhupk/image/upload/v1672033732/neonatal/wwfwergabwyhgce0nyxg.jpg",
+                  "host": ["localhost"],
+                  "port": "4000",
+                  "path": ["api", "patient", "id", "63a935c73711e59f33dd99ca"],
+                  "query": [
+                    {
+                      "key": "vitalsImageUrl",
+                      "value": "https://res.cloudinary.com/prabhupk/image/upload/v1672033735/neonatal/ftegktpokpd7fbrnarmz.jpg"
+                    },
+                    {
+                      "key": "xRayImageUrl",
+                      "value": "https://res.cloudinary.com/prabhupk/image/upload/v1672033732/neonatal/wwfwergabwyhgce0nyxg.jpg"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "patient case",
+      "item": [
+        {
+          "name": "list",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://tan-tender-clownfish.cyclic.app/api/patient-case",
+              "protocol": "https",
+              "host": ["tan-tender-clownfish", "cyclic", "app"],
+              "path": ["api", "patient-case"]
+            }
+          },
+          "response": [
+            {
+              "name": "list",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "localhost:3000/api/patient-case",
+                  "host": ["localhost"],
+                  "port": "3000",
+                  "path": ["api", "patient-case"]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": ""
+            }
+          ]
+        },
+        {
+          "name": "save",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "name",
+                  "value": "Benny Doe",
+                  "type": "text"
+                },
+                {
+                  "key": "patientId",
+                  "value": "63aaad2dc2475910cc259a14",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "43",
+                  "type": "text"
+                },
+                {
+                  "key": "audioFileUrl",
+                  "type": "file",
+                  "src": []
+                },
+                {
+                  "key": "location.latitude",
+                  "value": "12",
+                  "type": "text"
+                },
+                {
+                  "key": "location.longitude",
+                  "value": "727",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "https://tan-tender-clownfish.cyclic.app/api/patient-case",
+              "protocol": "https",
+              "host": ["tan-tender-clownfish", "cyclic", "app"],
+              "path": ["api", "patient-case"]
+            }
+          },
+          "response": [
+            {
+              "name": "save",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "name",
+                      "value": "Benny Doe",
+                      "type": "text"
+                    },
+                    {
+                      "key": "patientId",
+                      "value": "63a930e1e725525cab98053c",
+                      "type": "text"
+                    },
+                    {
+                      "key": "description",
+                      "value": "43",
+                      "type": "text"
+                    },
+                    {
+                      "key": "audioFileUrl",
+                      "type": "file",
+                      "src": "/home/prabhakar/Pictures/small size images/mike-meyers--haAxbjiHds-unsplash.jpg"
+                    },
+                    {
+                      "key": "location.latitude",
+                      "value": "12",
+                      "type": "text"
+                    },
+                    {
+                      "key": "location.longitude",
+                      "value": "727",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "localhost:4000/api/patient-case",
+                  "host": ["localhost"],
+                  "port": "4000",
+                  "path": ["api", "patient-case"]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": ""
+            }
+          ]
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "description",
+                  "value": "ttttttttttttttttttt",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "https://tan-tender-clownfish.cyclic.app/api/patient-case/id/63a1b4804189951d19b59d1f",
+              "protocol": "https",
+              "host": ["tan-tender-clownfish", "cyclic", "app"],
+              "path": ["api", "patient-case", "id", "63a1b4804189951d19b59d1f"]
+            }
+          },
+          "response": [
+            {
+              "name": "update",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "description",
+                      "value": "ttttttttttttttttttt",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "localhost:4000/api/patient-case/id/63a1b4804189951d19b59d1f",
+                  "host": ["localhost"],
+                  "port": "4000",
+                  "path": [
+                    "api",
+                    "patient-case",
+                    "id",
+                    "63a1b4804189951d19b59d1f"
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": ""
+            }
+          ]
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://tan-tender-clownfish.cyclic.app/api/patient-case/id/63abc0f0c1cc4681e85cfd33",
+              "protocol": "https",
+              "host": ["tan-tender-clownfish", "cyclic", "app"],
+              "path": ["api", "patient-case", "id", "63abc0f0c1cc4681e85cfd33"]
+            }
+          },
+          "response": [
+            {
+              "name": "delete",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "localhost:4000/api/patient-case/id/63a1b4804189951d19b59d1f",
+                  "host": ["localhost"],
+                  "port": "4000",
+                  "path": [
+                    "api",
+                    "patient-case",
+                    "id",
+                    "63a1b4804189951d19b59d1f"
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": ""
+            }
+          ]
+        },
+        {
+          "name": "find One",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://tan-tender-clownfish.cyclic.app/api/patient-case/id/63abc101c1cc4681e85cfd36",
+              "protocol": "https",
+              "host": ["tan-tender-clownfish", "cyclic", "app"],
+              "path": ["api", "patient-case", "id", "63abc101c1cc4681e85cfd36"]
+            }
+          },
+          "response": [
+            {
+              "name": "find One",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "localhost:4000/api/patient-case/id/63a9316ae725525cab98054c",
+                  "host": ["localhost"],
+                  "port": "4000",
+                  "path": [
+                    "api",
+                    "patient-case",
+                    "id",
+                    "63a9316ae725525cab98054c"
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "user role",
+      "item": [
+        {
+          "name": "save",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "name",
+                  "value": "doctor",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "face patient",
+                  "type": "text"
+                },
+                {
+                  "key": "videoUrl",
+                  "type": "file",
+                  "src": "/C:/Users/sanja/Downloads/Video/pexels-polina-kovaleva-8035714.mp4"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:4000/api/user-role",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "4000",
+              "path": ["api", "user-role"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "list",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4000/api/user-role",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "4000",
+              "path": ["api", "user-role"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "videoUrl",
+                  "type": "file",
+                  "src": "/C:/Users/sanja/Downloads/Video/pexels-polina-kovaleva-8035714.mp4",
+                  "disabled": true
+                },
+                {
+                  "key": "description",
+                  "value": "Hello this is doctor",
+                  "type": "text"
+                },
+                {
+                  "key": "name",
+                  "value": "Doctor",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:4000/api/user-role/id/63ac022312b0d031d2c1339c",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "4000",
+              "path": ["api", "user-role", "id", "63ac022312b0d031d2c1339c"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4000/api/user-role/id/63ac022312b0d031d2c1339c",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "4000",
+              "path": ["api", "user-role", "id", "63ac022312b0d031d2c1339c"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "find one",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4000/api/user-role/id/63abcef76b8643b873fcc0d8",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "4000",
+              "path": ["api", "user-role", "id", "63abcef76b8643b873fcc0d8"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "UserRoleOnCase",
+      "item": [
+        {
+          "name": "save",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "userId",
+                  "value": "63ac022312b0d031d2c1339c",
+                  "type": "text"
+                },
+                {
+                  "key": "patientCaseId",
+                  "value": "63ac022312b0d031d2c1339c",
+                  "type": "text"
+                },
+                {
+                  "key": "userRoleId",
+                  "value": "63ac022312b0d031d2c1339c",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:4000/api/user-role-oncase",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "4000",
+              "path": ["api", "user-role-oncase"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "list",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4000/api/user-role-oncase",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "4000",
+              "path": ["api", "user-role-oncase"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "userId",
+                  "value": "63abbac473efc1e8c16bb426",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:4000/api/user-role-oncase/id/63ac0e78a2f76fe738210efb",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "4000",
+              "path": [
+                "api",
+                "user-role-oncase",
+                "id",
+                "63ac0e78a2f76fe738210efb"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4000/api/user-role/id/63abcef76b8643b873fcc0d8",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "4000",
+              "path": ["api", "user-role", "id", "63abcef76b8643b873fcc0d8"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "find one",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4000/api/user-role-oncase/id/63ac0e78a2f76fe738210efb",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "4000",
+              "path": [
+                "api",
+                "user-role-oncase",
+                "id",
+                "63ac0e78a2f76fe738210efb"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
